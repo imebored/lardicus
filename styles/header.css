@@ -1,0 +1,79 @@
+.header {
+  background-color: rgb(233, 233, 233);
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom-style: solid;
+  font-family: arial;
+  border-color: rgb(57, 57, 57);
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  padding-left: 20px;
+}
+
+.more-hold {
+  width: 57px;
+  position: relative;
+}
+
+.hover-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+}
+
+.more {
+  height: 50px;
+  z-index: 200;
+}
+
+.more-hold:hover .hover-box {
+  bottom: -45px;
+}
+
+.kazoo, .lardici {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgb(97, 97, 97);
+  color: white;
+  border-radius: 3px;
+  opacity: 0;
+  padding: 3px 4px;
+  font-size: 13px;
+  transition: top .1s, opacity .1s, backround-color .1s;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.more-hold:hover .more {
+  opacity: 1;
+}
+
+.more-hold:hover .kazoo {
+  top: 54px;
+  opacity: 1;
+}
+
+.more-hold:hover .lardici {
+  top: 78px;
+  opacity: 1;
+}
+
+.kazoo:hover, .lardici:hover {
+  background-color: grey;
+}
+
+
+
+.text {
+  font-size: 50px;
+}

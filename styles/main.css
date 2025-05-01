@@ -1,0 +1,109 @@
+.body {
+  background-color: rgb(255, 255, 255);
+}
+
+.main {
+  margin: 120px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  font-family: arial;
+  font-size: 40px;
+}
+
+.lard {
+  display: grid;
+  columns: 1fr;
+  justify-content: center;
+}
+
+.info-holder {
+ position: relative;
+ display: grid;
+}
+
+.image-lard {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  position: relative;
+  border-style: solid;
+  border-color: rgb(55, 55, 55);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-width: 3px;
+  border-bottom-style: none;
+}
+
+.price {
+  font-size: 30px;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background-color: rgb(45, 45, 45);
+  border-radius: 50%;
+  padding: 4px;
+  border-color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-style: solid;
+  top: 5px;
+  left: 5px;
+}
+
+.name {
+  text-align: center;
+  background-color: rgb(45, 45, 45);
+  border-style: solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: rgb(55, 55, 55);
+  border-width: 3px;
+  color: white;
+  border-top-style: none;
+  z-index: 1;
+}
+
+.buy {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgb(255, 204, 0);
+  border-radius: 20px;
+  transition: bottom .1s;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.info-holder:hover .buy {
+  bottom: 50px;
+}
+
+
+
+@media (max-width :700px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 701px) and (max-width: 1030px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 1031px) and (max-width: 1300px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1301px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
